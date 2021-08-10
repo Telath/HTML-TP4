@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="TP4 - Les formulaires">
+    <title>TP4 - Les formulaires</title>
+</head>
+<body>
+
+    <h1>Pouillart Clément - Les formulaires</h1>
+
+    <h2>Mon premier formulaire</h2>
+        <form>
+
+            <!-- Début des inputs radio -->
+            <div>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Homme</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Femme</label>
+                <input type="radio" id="other" name="gender">
+                <label for="other">Non renseigné</label>
+            </div><br>
+            <!-- Fin des inputs radio -->
+
+            <!-- Début nom, prénom, âge & email -->
+            <div>
+                <label for="lastname">Nom:</label>
+                <input type="text" id="lastname" name="lastname">
+            </div><br>
+
+            <div>
+                <label for="firstname">Prénom:</label>
+                <input type="text" id="firstname" name="firstname">
+            </div><br>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="16" max="99">
+            </div><br>
+
+            <div>
+                <label for="mail">Mail:</label>
+                <input type="email" id="mail" name="mail">
+            </div><br>
+            <!-- Fin nom, prénom, âge & email -->
+
+            <!-- Champ de saisie sur plusieurs lignes -->
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="msg" rows="5" cols="33"></textarea>
+            </div><br>
+
+            <!-- Accepter les conditions - checkbox -->
+            <div>
+                <input type="checkbox" id="cdt" name="cdt">
+                <label for="cdt">En cochant...t'accepte.</label>
+            </div><br>
+
+            <!-- Bouton envoyer -->
+            <input type="submit" id="send" name="send" value="Envoyer le message">
+        </form><hr>
+            
+        <h2>Ensemble de champs</h2>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>MON SECOND FORMULAIRE</legend><br>
+
+                    <fieldset>
+                        <legend>Identité</legend>
+                        <div>
+                            <input type="radio" id="male2" name="gender">
+                            <label for="male2">Homme</label>
+                            <input type="radio" id="female2" name="gender">
+                            <label for="female2">Femme</label>
+                            <input type="radio" id="other2" name="gender">
+                            <label for="other2">Non spécifié</label>
+                        </div><br>
+                        <div>
+                            <label for="lastname2">Nom:</label>
+                            <input type="text" id="lastname2" name="lastname2" placeholder="ex: Deschamps">
+                        </div><br>
+                        <div>
+                            <label for="firstname2">Prénom:</label>
+                            <input type="text" id="firstname2" name="firstname2" placeholder="ex: Didier">
+                        </div><br>
+            
+                        <div>
+                            <label for="age2">Age:</label>
+                            <input type="number" id="age2" name="age2" min="16" max="99" placeholder="ex: 58">
+                        </div><br>
+
+                        <fieldset>
+                            <legend>Situation personnelle</legend>
+                            <div>
+                                <input type="radio" id="single" name="psit">
+                                <label for="single">Célibataire</label>
+                                <input type="radio" id="married" name="psit">
+                                <label for="married">Marié</label>
+                                <input type="radio" id="widow" name="psit">
+                                <label for="widow">Veuf</label>
+                                <input type="radio" id="funion" name="psit">
+                                <label for="funion">Union libre</label>
+                            </div>
+                        </fieldset><br>
+
+                        <fieldset>
+                            <legend>Contact</legend>
+                            <div>
+                                <label for="phone">Téléphone:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="ex: 0610523359">
+                            </div><br>
+                            <div>
+                                <label for="mail2">Mail:</label>
+                                <input type="email" id="mail2" name="mail2" placeholder="ex: d.d@gmail.com">
+                            </div>
+                        </fieldset><br>
+
+                        <div>
+                            <input type="checkbox" id="cdt2" name="cdt2">
+                            <label for="cdt2">En cochant...t'accepte.</label>
+                        </div><br>
+
+                        <div>
+                            <input type="button" id="sendcoords" name="sendcoords" value="Transmettre mes coordonnées">
+                        </div>
+
+                    </fieldset>
+                </fieldset>
+            </form>
+
+        
+    
+</body>
+</html>
